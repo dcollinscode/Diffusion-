@@ -6,12 +6,6 @@
 
 Official implementation of <strong>Using Diffusion Priors for Video Amodal Segmentation</strong>
 
-[*Kaihua Chen*](https://www.linkedin.com/in/kaihuac/), [*Deva Ramanan*](https://www.cs.cmu.edu/~deva/), [*Tarasha Khurana*](https://www.cs.cmu.edu/~tkhurana/)
-
-![diffusion-vas](assets/diffusion-vas.gif)
-
-[**Paper**](https://arxiv.org/abs/2412.04623) | [**Project Page**](https://diffusion-vas.github.io)
-
 ## TODO 🤓
 
 - [x] Release the checkpoint and inference code 
@@ -175,33 +169,3 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 accelerate launch train/train_diffusion_vas
 ```
 
 This stage does not require depth estimation, and training typically completes in ~30 hours on 8× RTX 3090s.
-
-## Acknowledgement
-
-This work builds on top of several excellent projects, including [Depth Anything V2](https://github.com/DepthAnything/Depth-Anything-V2), [SAM2]((https://github.com/facebookresearch/sam2)), [Stable Video Diffusion](https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt), and [SVD Xtend](https://github.com/pixeli99/SVD_Xtend). Our training and evaluation are based on [SAIL-VOS](https://sailvos.web.illinois.edu/_site/index.html) and [TAO-Amodal](https://huggingface.co/datasets/chengyenhsieh/TAO-Amodal). We sincerely thank the authors for their contributions.
-
-
-## Citation
-
-If you find this work helpful, please consider citing our papers:
-
-```bibtex
-@InProceedings{chen2025diffvas,
-    author    = {Chen, Kaihua and Ramanan, Deva and Khurana, Tarasha},
-    title     = {Using Diffusion Priors for Video Amodal Segmentation},
-    booktitle = {Proceedings of the Computer Vision and Pattern Recognition Conference (CVPR)},
-    month     = {June},
-    year      = {2025},
-    pages     = {22890-22900}
-}
-```
-```bibtex
-@article{hsieh2023taoamodal,
-  title={TAO-Amodal: A Benchmark for Tracking Any Object Amodally},
-  author={Cheng-Yen Hsieh and Kaihua Chen and Achal Dave and Tarasha Khurana and Deva Ramanan},
-  journal={arXiv preprint arXiv:2312.12433},
-  year={2023}
-}
-```
-
-
