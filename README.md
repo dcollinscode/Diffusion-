@@ -6,6 +6,8 @@
 
 Official implementation of <strong>Using Diffusion Priors for Video Amodal Segmentation</strong>
 
+![diffusion-vas](assets/diffusion-vas.gif)
+
 ## TODO 🤓
 
 - [x] Release the checkpoint and inference code 
